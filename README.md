@@ -1,97 +1,70 @@
-# SE2031 Practical 2 - Student Management System
+# SE2012 Practical 02 - Student Management System
 
-## Repository Context
-This repository is for **SE2031 Java Programming - Practical 2**.
+**Student Name:** Samarappuli V.D.B  
+**IT Number:** IT25100959
 
-The assignment focuses on building and evolving a **Student Management System** while practicing:
-- Java classes and object-oriented design
-- Package organization (`models`, `services`, `mainapp`)
-- Control structures (`switch`, loops)
-- Array-based sorting and searching
-- JavaDoc documentation generation
+## Description
 
-Core classes expected by the practical:
-- `Student` (student id and name)
-- `Course` (course code and title)
-- `Main` (menu, input handling, program flow)
-- `EnrollmentManager` (after package refactor)
+This repository contains my solutions for SE2012 Practical 02 - Student Management System.
 
-## Suggested Project Structures
+The practical demonstrates object-oriented programming concepts in Java by developing a simple student management system using packages, classes, arrays, and menu-driven programming.
 
-### Part 1 (No packages)
+## Project Structure
 
-```text
+```
 StudentManagement/
-|-- Student.java
-|-- Course.java
-`-- Main.java
+│
+├── models/
+│   ├── Student.java
+│   └── Course.java
+│
+├── services/
+│   └── EnrollmentManager.java
+│
+└── mainapp/
+    └── Main.java
 ```
 
-### Part 2+ (With packages)
+## Features
 
-```text
-StudentManagement/
-|-- models/
-|   |-- Student.java
-|   `-- Course.java
-|-- services/
-|   `-- EnrollmentManager.java
-`-- mainapp/
-    `-- Main.java
-```
+- Add student details
+- Store course information
+- Manage student enrollments
+- Search for students
+- Sort student records
+- Display all student information
+- Menu-driven console application
 
-## Prerequisites
-- JDK 17+ (or your module-required Java version)
-- Command prompt/terminal
+## Concepts Covered
 
-Check installation:
+- Object-Oriented Programming
+- Classes and Objects
+- Packages
+- Arrays
+- Searching
+- Sorting
+- Loops
+- Switch Statements
+- Encapsulation
+- Console Input using Scanner
 
-```bash
-java -version
-javac -version
-```
+## Requirements
 
-## How to Compile and Run
+- Java JDK 17 or later
 
-### Option A: Part 1 (without packages)
-Run these commands from the folder containing `Main.java`:
+## Run Instructions
 
-```bash
-javac Student.java Course.java Main.java
-java Main
-```
+1. Open a terminal or command prompt.
+2. Navigate to the project folder (`StudentManagement`).
 
-### Option B: Part 2+ (with packages)
-Run these commands from the project root (`StudentManagement/`):
+### Compile the project
 
 ```bash
 javac models/*.java services/*.java mainapp/Main.java
-java mainapp.Main
 ```
 
-## JavaDoc Generation
-After adding JavaDoc comments to all public classes and methods:
+### Run the application
 
 ```bash
-javadoc -d docs models/*.java services/*.java
+java mainapp.Main
 ```
-
-Then open:
-- `docs/index.html`
-
-## Functional Expectations
-Your final program should support:
-- Adding/enrolling students through a menu
-- Listing students
-- Searching student by ID (linear search)
-- Sorting students by name (for example, bubble sort)
-- Exit option
-
-## Submission Checklist
-- [ ] Initial multi-class version completed
-- [ ] Refactored into packages
-- [ ] Menu implemented with `switch` and loops
-- [ ] Array-based searching and sorting added
-- [ ] JavaDoc comments written for public APIs
-- [ ] JavaDoc HTML generated
-- [ ] Repository includes this `README.md` with run instructions
